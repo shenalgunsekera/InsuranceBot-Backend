@@ -59,15 +59,26 @@ async def _load_builtin_knowledge():
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting IS ChatBot API...")
+    logger.info(f"DATABASE_URL: {settings.database_url[:30]}...")
+    logger.info(f"GROQ_KEY set: {bool(settings.groq_api_key and settings.groq_api_key != 'your-groq-api-key-here')}")
     os.makedirs("./data/uploads", exist_ok=True)
     os.makedirs("./data/chroma_db", exist_ok=True)
-    await init_db()
-    await _seed_admin()
+    try:
+        await init_db()
+        logger.info("Database initialized")
+    except Exception as e:
+        logger.error(f"DB init failed: {e}")
+        raise
+    try:
+        await _seed_admin()
+    except Exception as e:
+        logger.error(f"Admin seed failed: {e}")
+        raise
     try:
         await _load_builtin_knowledge()
     except Exception as e:
-        logger.warning(f"Knowledge load skipped (Ollama not ready yet?): {e}")
-    logger.info("API ready at http://localhost:8000")
+        logger.warning(f"Knowledge load skipped: {e}")
+    logger.info("API ready.")
     yield
 
 
