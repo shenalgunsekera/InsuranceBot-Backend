@@ -1,0 +1,217 @@
+SRI LANKA INSURANCE INDUSTRY — COMPREHENSIVE KNOWLEDGE BASE
+
+== REGULATORY FRAMEWORK ==
+
+INSURANCE REGULATORY COMMISSION OF SRI LANKA (IRCSL)
+— Established under the Regulation of Insurance Industry Act No. 43 of 2000
+— Previously known as Insurance Board of Sri Lanka (IBSL) until 2011
+— Under the purview of the Ministry of Finance
+— Mandates: licensing, supervision, solvency monitoring, consumer protection
+
+KEY LEGISLATION
+— Regulation of Insurance Industry Act No. 43 of 2000 (as amended)
+— Insurance (Amendment) Act No. 27 of 2007
+— Insurance Industry (Amendment) Act No. 23 of 2011 (created IRCSL from IBSL)
+— Motor Traffic Act: makes third-party motor insurance compulsory
+
+LICENSING CLASSES (post-2011 separation requirement)
+— Long-Term Insurance (Life): Manages life, health, and savings products
+— General Insurance: Manages motor, fire, marine, liability products
+— Composite insurers had to segregate by 2015
+
+SOLVENCY REQUIREMENTS
+— Minimum required capital: LKR 500 million (life), LKR 500 million (general)
+— Risk-Based Capital (RBC) framework introduced progressively
+— Insurers must maintain required solvency margins at all times
+
+== MAJOR INSURANCE COMPANIES IN SRI LANKA ==
+
+LONG-TERM (LIFE) INSURERS
+— Ceylinco Life Insurance Ltd: Largest private life insurer; known for wide rural network
+— AIA Insurance Lanka Ltd: Part of AIA Group (Hong Kong); strong in unit-linked products
+— Union Assurance PLC: Listed company; JV with DFCC Bank; strong bancassurance
+— Softlogic Life Insurance PLC: Part of Softlogic Group; tech-forward approach
+— HNB Assurance PLC: Backed by Hatton National Bank; bancassurance focus
+— Sri Lanka Insurance Corporation (SLIC) Life: State-owned; largest insurer overall
+— Janashakthi Life Insurance: Part of Janashakthi Group
+— Allianz Life Insurance Lanka: Part of Allianz SE (Germany)
+— Sunshine Life Insurance: Regional player
+— Sanasa Life Insurance: Cooperative sector
+
+GENERAL INSURERS
+— Sri Lanka Insurance Corporation (SLIC) General: State-owned; market leader in motor
+— Allianz Insurance Lanka Ltd: Strong in commercial lines
+— Ceylinco Insurance PLC (General): Large retail network
+— Janashakthi Insurance PLC: Significant market share
+— Fairfirst Insurance Ltd (formerly Chartis/AIG): Commercial lines specialist
+— Orient Insurance Ltd: Part of Orient Finance Group
+— Amana Takaful Lanka PLC: Islamic insurance (Takaful)
+— Continental Insurance Lanka: Mid-size general insurer
+— People's Insurance PLC: State commercial bank subsidiary
+— Arpico Insurance: Part of Richard Pieris Group
+
+== MOTOR INSURANCE IN SRI LANKA ==
+
+COMPULSORY THIRD-PARTY (CTP) INSURANCE
+— Required under Motor Traffic Act
+— Must be obtained before registering/renewing vehicle at Department of Motor Traffic (DMT)
+— Covers: death, bodily injury, property damage to third parties
+— Does NOT cover own vehicle or own injuries
+— Tariff: regulated by IRCSL; same rate across all insurers
+— Certificate of Insurance issued; must be carried in vehicle
+
+COMPREHENSIVE MOTOR INSURANCE
+— Includes CTP + Own Damage (OD)
+— OD covers: accident damage, fire, natural disasters (flood, storm)
+— Additional covers: Theft, key replacement, road assistance
+— Sum insured based on market value at renewal; not replacement value
+
+NO-CLAIM DISCOUNT (NCD) — Sri Lanka
+— Claim-free Year 1: 10% discount
+— Year 2: 20% discount
+— Year 3: 30% discount
+— Year 4: 40% discount
+— Year 5+: 50% discount (maximum)
+— NCD is portable between insurers (with NCD certificate)
+— Making a claim resets NCD to 0% next renewal
+
+MOTOR CLAIMS PROCESS — SRI LANKA
+1. Report to insurer within 24–72 hours (check policy)
+2. Submit claim form + driving licence + registration book
+3. For accidents: obtain police report from nearest police station
+4. For theft: provide police complaint + FIR
+5. Vehicle inspection by insurer's surveyor
+6. Repair at approved garage (cashless) or reimburse approved amount
+7. Depreciation applies to parts based on vehicle age
+
+== HEALTH INSURANCE IN SRI LANKA ==
+
+MARKET STRUCTURE
+— IRCSL regulates health insurance under Long-Term (life) class
+— Government provides free healthcare via state hospitals (high usage)
+— Private health insurance complements state coverage
+
+COMMON PRODUCTS
+— Individual Hospitalization Plans
+— Family Floater Plans
+— Group Medical — employer-provided for corporate staff
+— Critical Illness (Cancer, Cardiac, Stroke, Kidney Failure, etc.)
+— Personal Accident (PA) Plans
+
+KEY FEATURES IN SRI LANKA
+— Room Rent Limits: Policies specify maximum daily room rent (e.g., LKR 3,000–10,000/day)
+— Sub-limits on specific treatments (cataract, dialysis, maternity)
+— Pre-authorization required for planned admissions
+— Network hospitals: cashless settlement at empanelled hospitals
+— Reimbursement: For non-network hospitals
+— Waiting Period: 30 days general, 2 years pre-existing conditions
+— Maternity: Usually excluded for first 2 years; sub-limited thereafter
+
+== LIFE INSURANCE IN SRI LANKA ==
+
+POPULAR PRODUCTS
+— 20-Year Endowment: Most popular savings + protection product
+— Term Life (Pure Risk): Low premium, death benefit only
+— Whole Life: Lifelong cover + cash value
+— Education Plans: Endowment with benefit timed to child's education milestones
+— Retirement Annuity Plans
+— Unit-Linked Insurance Plans (ULIPs)
+
+POLICY LOAN
+— Policyholders can borrow against endowment cash value (up to 80–90% of surrender value)
+— Interest charged; unpaid loans reduce death benefit
+
+FREE LOOK PERIOD
+— 14 days from receipt of policy document
+— Policyholder can return policy for full refund (minus medical expenses)
+
+PREMIUM PAYMENT
+— Annual, semi-annual, quarterly, monthly
+— Most insurers accept bank transfer, cheque, direct debit, online payment
+— Grace period: 30 days for annual/semi-annual; 15 days for monthly
+
+SECTION 54 — IRCSL ACT
+— Insurers must credit bonus to participating life policies
+— Declared bonuses form part of sum assured on maturity/death
+
+== TAKAFUL (ISLAMIC INSURANCE) ==
+
+— Amana Takaful Lanka PLC is the main Takaful operator in Sri Lanka
+— Shariah-compliant insurance: policyholders contribute to a mutual fund (Tabarru)
+— Surplus in the fund is returned to participants (not profit for insurer)
+— Wakalah model: insurer charges management fee
+— Available for life, health, motor, fire, and marine
+
+== CLAIMS — SRI LANKA SPECIFIC ==
+
+LIFE INSURANCE CLAIMS
+Documents Required:
+— Claim form (insurer-specific)
+— Original policy document
+— Death certificate (from Registrar General's Department)
+— Birth certificate of deceased
+— NIC (National Identity Card) of claimant
+— Medical certificate / hospital records (for illness deaths)
+— Police/post-mortem report (for accidental/unnatural deaths)
+— Nominee identification documents
+
+Settlement Timeline: IRCSL mandates settlement within 30 days of complete documents
+
+MOTOR CLAIMS
+— Surveyor must inspect WITHIN 24 HOURS of intimation for total loss
+— 3rd Party claims: Lodge with insurer + police; may take months if disputed
+— Motor Accident Claim Tribunal (MACT): Handles 3rd party dispute resolution
+
+REPUDIATION GROUNDS (common)
+— Material misrepresentation at proposal stage
+— Violation of policy conditions (e.g., driving without valid licence)
+— Claim for excluded cause
+— Fraudulent claim
+
+GRIEVANCE REDRESSAL
+— First: Insurer's internal complaints mechanism (must respond within 14 days)
+— Second: IRCSL Consumer Affairs Division (Tel: +94 11 2394 478)
+— Third: Insurance Ombudsman (www.insuranceombudsman.lk)
+
+== SRI LANKA INSURANCE MARKET DATA ==
+
+Market Penetration: ~1.2% of GDP (below global average of ~7%)
+Premium Volume: Approx. LKR 280 billion (2023 estimates)
+Life : Non-Life split: ~60:40
+Number of licensed insurers: Approximately 28 companies
+Distribution channels: Agents, brokers, bancassurance, direct (online)
+
+== AGENTS AND BROKERS ==
+
+INSURANCE AGENTS
+— Individual agents must hold IRCSL agent licence
+— Training: CPIII (Certificate of Proficiency in Insurance Industry)
+— Agents represent ONE insurer only
+
+INSURANCE BROKERS
+— Independent; represent the client, not the insurer
+— Must hold IRCSL broker licence
+— Can place business with multiple insurers
+— Higher professional standards required
+
+BANCASSURANCE
+— Banks distribute insurance products as agents
+— Major channels: HNB (HNB Assurance), DFCC (Union Assurance), Sampath Bank, BOC, People's Bank
+
+== TAX TREATMENT ==
+
+Premium Tax Relief (Sri Lanka)
+— Life insurance premiums: up to LKR 100,000 per year qualifies for income tax deduction
+— Under Section 34 of Inland Revenue Act No. 24 of 2017 (as amended)
+— Health insurance premiums: allowable deduction under employer benefits
+
+== KEY IRCSL CONSUMER RIGHTS ==
+
+As a policyholder in Sri Lanka, you have the right to:
+1. Receive a policy document within 30 days of first premium
+2. Receive a free-look period of 14 days
+3. Receive a benefit illustration before purchasing a ULIP or endowment
+4. Have your claim settled within 30 days of submitting all required documents
+5. Lodge a complaint with IRCSL if your insurer fails to respond within 14 days
+6. Access an Insurance Ombudsman for independent dispute resolution
+7. Know all exclusions, waiting periods, and conditions BEFORE purchasing

@@ -1,0 +1,10 @@
+.env
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+venv/
+data/chatbot.db
+data/chroma_db/
+data/uploads/
+*.log

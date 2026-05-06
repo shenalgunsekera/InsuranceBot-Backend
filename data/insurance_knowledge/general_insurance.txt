@@ -1,0 +1,140 @@
+GENERAL INSURANCE CONCEPTS — KNOWLEDGE BASE
+
+== WHAT IS INSURANCE ==
+
+Insurance is a contract (policy) between an individual or entity (policyholder) and an insurance company (insurer). In exchange for a premium payment, the insurer promises to compensate the policyholder for specific financial losses, damages, illness, or death.
+
+Key principle: Risk pooling — many policyholders pay premiums into a common fund; those who suffer losses are compensated from that fund.
+
+== FUNDAMENTAL PRINCIPLES OF INSURANCE ==
+
+1. Utmost Good Faith (Uberrimae Fidei)
+   Both parties must disclose all material facts honestly. Concealment or misrepresentation can void the policy.
+
+2. Insurable Interest
+   The policyholder must have a financial stake in the insured subject. You cannot insure something you do not have an interest in.
+
+3. Indemnity
+   The insured is restored to the same financial position they were in before the loss — not to profit from it. (Does not apply to life insurance, which pays a fixed sum.)
+
+4. Subrogation
+   After paying a claim, the insurer can pursue a third party responsible for the loss to recover the amount paid.
+
+5. Contribution
+   If multiple policies cover the same risk, each insurer contributes proportionally to the claim.
+
+6. Proximate Cause
+   The dominant, effective cause of a loss determines whether a claim is covered.
+
+== TYPES OF INSURANCE ==
+
+LIFE INSURANCE
+— Term Life: Pure death cover for a specified period. No maturity benefit. Lowest premium.
+— Whole Life: Covers the insured for their entire life. Builds cash value.
+— Endowment: Pays a lump sum on death OR on surviving to the end of the term. Savings + protection.
+— Unit-Linked Insurance Plans (ULIPs): Part premium invested in market-linked funds; part goes to life cover. Investment risk borne by policyholder.
+— Annuities: Regular income in retirement, purchased with a lump sum.
+— Group Life: Employer-provided cover for employees; typically annual renewable term.
+
+HEALTH INSURANCE
+— Individual: Covers one person's hospitalization, surgery, critical illness.
+— Family Floater: Single sum insured shared among all family members.
+— Critical Illness: Lump-sum payout on diagnosis of specified illnesses (cancer, heart attack, stroke, kidney failure, etc.).
+— Hospital Cash: Daily cash benefit during hospitalization.
+— Top-Up / Super Top-Up: Kicks in after a deductible threshold is crossed.
+
+MOTOR INSURANCE
+— Third-Party Liability (TPL): Legally mandatory in most countries. Covers damage/injury caused to others. Does not cover own vehicle.
+— Comprehensive: Covers third-party liability PLUS own vehicle damage (own damage, fire, theft, natural calamities).
+— Own Damage (OD): Component of comprehensive that covers own vehicle.
+— No Claim Discount (NCD / NCB): Premium discount for claim-free years. Typically 20%–50%.
+— Add-ons: Zero depreciation, roadside assistance, engine protect, return to invoice.
+
+PROPERTY / FIRE INSURANCE
+— Standard Fire & Special Perils Policy: Covers building and contents against fire, lightning, explosion, natural disasters.
+— Burglary: Covers theft with forced entry.
+— All-Risk: Broadest cover — all causes unless specifically excluded.
+
+MARINE INSURANCE
+— Cargo: Goods in transit by sea, air, or land.
+— Hull: Ships and vessels.
+— Institute Cargo Clauses A/B/C: A = widest cover; C = narrowest.
+
+LIABILITY INSURANCE
+— Public Liability: Bodily injury or property damage to third parties.
+— Professional Indemnity (Errors & Omissions): Claims from professional mistakes.
+— Product Liability: Damage caused by a product you manufactured/sold.
+— Employer's Liability / Workers' Compensation: Covers employee injury/illness at work.
+
+TRAVEL INSURANCE
+— Medical emergencies abroad, trip cancellation, lost baggage, flight delay.
+
+== KEY INSURANCE TERMS ==
+
+Premium: The price paid for insurance coverage, typically annually or monthly.
+
+Sum Insured (SI): The maximum amount the insurer will pay in a claim.
+
+Deductible / Excess: Amount the policyholder must pay before the insurer pays. Higher deductible = lower premium.
+
+Exclusion: Events or circumstances NOT covered by the policy.
+
+Rider / Endorsement: An add-on to a base policy that extends or modifies coverage.
+
+Waiting Period: Time after policy start before certain benefits become claimable (common in health insurance, e.g., 30-day waiting period for illness).
+
+Pre-existing Condition: A health condition that existed before the policy was taken. Often excluded for 2–4 years.
+
+Grace Period: Extra time (usually 30 days) to pay premium after due date without lapsing the policy.
+
+Surrender Value: Cash paid to policyholder who exits a life policy before maturity.
+— Guaranteed Surrender Value (GSV): Minimum amount guaranteed after policy is in force for 3 years.
+— Special Surrender Value: Typically higher; calculated as (paid-up SI × surrender value factor).
+
+Paid-Up Value: Reduced benefit when premiums stop after the minimum in-force period.
+
+Lapse: Policy becomes void when premium is not paid within the grace period.
+
+Revival: Reinstating a lapsed policy (usually within 2–5 years) by paying arrears + interest.
+
+Maturity Benefit: Payment at the end of the policy term (endowment, money-back).
+
+Nomination: Designating a person (nominee) to receive the policy benefit on the insured's death.
+
+Assignment: Transfer of policy ownership — absolute (full transfer) or conditional.
+
+== CLAIMS PROCESS ==
+
+1. First Notice of Loss (FNOL): Inform insurer as soon as possible after an incident.
+2. Claim Form: Complete and submit the insurer's claim form.
+3. Document Submission: Provide required documents (police report for theft/accident, medical records for health, death certificate for life).
+4. Survey / Investigation: Insurer may appoint a surveyor or loss adjuster to assess the damage.
+5. Assessment: Surveyor submits report; insurer evaluates coverage and quantum.
+6. Settlement / Repudiation: Insurer either settles the claim (cheque/bank transfer) or repudiates (rejects) with reasons.
+7. Dispute Resolution: If dissatisfied, policyholder can approach the Insurance Ombudsman or regulator.
+
+== UNDERWRITING ==
+
+Underwriting is the process of evaluating and pricing risk. Factors:
+— Age, health status (life/health)
+— Vehicle make, model, age, usage (motor)
+— Building construction, location, occupancy (property)
+— Claims history
+
+Loadings: Extra premium charged for higher-risk applicants.
+Declined Risk: Insurer may refuse to cover a risk entirely.
+
+== REINSURANCE ==
+
+Reinsurance is insurance for insurers. Primary insurers transfer part of their risk to reinsurers (e.g., SwissRe, MunichRe) to limit their exposure on large claims.
+— Facultative: Per-policy basis.
+— Treaty: Automatic arrangement for a category of policies.
+
+== INSURANCE REGULATION ==
+
+Insurers are regulated by government bodies to ensure solvency, fair practices, and policyholder protection. Key regulatory requirements:
+— Minimum capital and solvency margins
+— Separation of life and non-life funds
+— Approved investment categories
+— Disclosure requirements
+— Grievance redressal mechanisms
