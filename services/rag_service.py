@@ -1,81 +1,83 @@
-import json
-import numpy as np
-from pathlib import Path
+from database import get_db
 from loguru import logger
-from config import settings
 from typing import List, Dict, Any
-
-
-class VectorStore:
-    """Pure-Python vector store backed by a JSON file. No C++ required."""
-
-    def __init__(self, path: str):
-        self._file = Path(path) / "vectors.json"
-        self._file.parent.mkdir(parents=True, exist_ok=True)
-        self._docs: List[Dict] = json.loads(self._file.read_text()) if self._file.exists() else []
-
-    def _save(self):
-        self._file.write_text(json.dumps(self._docs))
-
-    def upsert(self, doc_id: str, texts: List[str], metadatas: List[Dict], embeddings: List[List[float]]):
-        # Remove old chunks for this doc
-        self._docs = [d for d in self._docs if d["meta"].get("doc_id") != doc_id]
-        for text, meta, emb in zip(texts, metadatas, embeddings):
-            self._docs.append({"text": text, "meta": meta, "emb": emb})
-        self._save()
-
-    def search(self, query_emb: List[float], top_k: int = 5) -> List[Dict]:
-        if not self._docs:
-            return []
-        embs = np.array([d["emb"] for d in self._docs], dtype=np.float32)
-        q = np.array(query_emb, dtype=np.float32)
-        # Cosine similarity
-        norm_embs = embs / (np.linalg.norm(embs, axis=1, keepdims=True) + 1e-10)
-        norm_q = q / (np.linalg.norm(q) + 1e-10)
-        sims = norm_embs @ norm_q
-        top_idx = np.argsort(sims)[::-1][:top_k]
-        return [
-            {"content": self._docs[i]["text"], "metadata": self._docs[i]["meta"], "similarity": float(sims[i])}
-            for i in top_idx if sims[i] > 0.3
-        ]
-
-    def delete(self, doc_id: str):
-        self._docs = [d for d in self._docs if d["meta"].get("doc_id") != doc_id]
-        self._save()
-
-    def count(self) -> int:
-        return len(self._docs)
+import uuid
 
 
 class RAGService:
-    def __init__(self):
-        self._store = VectorStore(settings.chroma_path)
+    """Keyword-based RAG using Firestore. No embeddings needed — works on Vercel."""
 
-    async def add_documents(self, chunks: List[str], doc_id: str, filename: str, category: str = "general") -> int:
-        if not chunks:
-            return 0
-        from services.embedding_service import embed_texts
-        embeddings = await embed_texts(chunks)
-        metadatas = [{"doc_id": doc_id, "filename": filename, "category": category, "chunk_index": i} for i in range(len(chunks))]
-        self._store.upsert(doc_id, chunks, metadatas, embeddings)
-        logger.info(f"Stored {len(chunks)} chunks for {filename}")
-        return len(chunks)
+    def _score(self, text: str, keywords: set) -> int:
+        t = text.lower()
+        return sum(1 for k in keywords if k in t)
 
-    async def build_context(self, query: str) -> tuple[str, List[str]]:
-        from services.embedding_service import embed_query
-        query_emb = await embed_query(query)
-        hits = self._store.search(query_emb, top_k=settings.rag_top_k)
+    def _extract_keywords(self, query: str) -> set:
+        stop = {'what','is','the','a','an','in','of','to','for','how','does',
+                'do','can','i','me','my','and','or','with','are','was','were',
+                'be','been','being','have','has','had','will','would','could',
+                'should','about','if','this','that','which','when','where'}
+        words = set(query.lower().split()) - stop
+        return {w for w in words if len(w) > 2}
+
+    def add_documents(self, chunks: List[str], doc_id: str, filename: str, category: str = "general") -> int:
+        db = get_db()
+        batch = db.batch()
+        count = 0
+        for i, chunk in enumerate(chunks):
+            ref = db.collection('vectors').document(f"{doc_id}_chunk_{i}")
+            batch.set(ref, {
+                'doc_id': doc_id,
+                'filename': filename,
+                'category': category,
+                'chunk_index': i,
+                'text': chunk,
+            })
+            count += 1
+            if count % 400 == 0:  # Firestore batch limit is 500
+                batch.commit()
+                batch = db.batch()
+        batch.commit()
+        logger.info(f"Stored {count} chunks for {filename}")
+        return count
+
+    def search(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        keywords = self._extract_keywords(query)
+        if not keywords:
+            return []
+        db = get_db()
+        docs = list(db.collection('vectors').limit(500).stream())
+        scored = []
+        for doc in docs:
+            d = doc.to_dict()
+            score = self._score(d.get('text', ''), keywords)
+            if score > 0:
+                scored.append((score, d))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        return [{'content': d['text'], 'metadata': d, 'score': s} for s, d in scored[:top_k]]
+
+    def build_context(self, query: str) -> tuple[str, List[str]]:
+        hits = self.search(query)
         if not hits:
             return "", []
-        sources = list({h["metadata"]["filename"] for h in hits})
+        sources = list({h['metadata']['filename'] for h in hits})
         context = "\n\n---\n\n".join(f"[Source: {h['metadata']['filename']}]\n{h['content']}" for h in hits)
         return context, sources
 
     def delete_document(self, doc_id: str):
-        self._store.delete(doc_id)
+        db = get_db()
+        docs = db.collection('vectors').where('doc_id', '==', doc_id).stream()
+        batch = db.batch()
+        for doc in docs:
+            batch.delete(doc.reference)
+        batch.commit()
 
     def get_stats(self) -> Dict[str, Any]:
-        return {"total_chunks": self._store.count()}
+        try:
+            db = get_db()
+            count = len(list(db.collection('vectors').limit(1000).stream()))
+            return {"total_chunks": count}
+        except Exception:
+            return {"total_chunks": 0}
 
 
 rag_service = RAGService()
