@@ -15,9 +15,10 @@ from routers.widget_config import router as widget_router
 
 async def _seed_admin():
     async with AsyncSessionLocal() as db:
-        from sqlalchemy import select
+        from sqlalchemy import select, update
         result = await db.execute(select(AdminUser).where(AdminUser.username == settings.admin_username))
-        if not result.scalar_one_or_none():
+        existing = result.scalar_one_or_none()
+        if not existing:
             db.add(AdminUser(
                 username=settings.admin_username,
                 email=settings.admin_email,
@@ -25,6 +26,15 @@ async def _seed_admin():
             ))
             await db.commit()
             logger.info(f"Created admin: {settings.admin_username}")
+        else:
+            # Always sync password from env var on startup
+            await db.execute(
+                update(AdminUser)
+                .where(AdminUser.username == settings.admin_username)
+                .values(hashed_password=hash_password(settings.admin_password))
+            )
+            await db.commit()
+            logger.info(f"Synced admin password from env")
 
 
 async def _load_builtin_knowledge():
